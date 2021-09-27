@@ -345,8 +345,8 @@ var Plugin = class {
             diffX + enemyDirX + enemyDirX * t
         );
         var pos = {
-            x: playerPos.x + Math.cos(bulletAngle) * distance,
-            y: playerPos.y + Math.sin(bulletAngle) * distance,
+            x: Math.cos(bulletAngle) * distance,
+            y: Math.sin(bulletAngle) * distance,
         };
         return dataAccessor.Camera().pointToScreen(pos);
     }
