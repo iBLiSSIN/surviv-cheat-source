@@ -1,4 +1,3 @@
-
 var Plugin = class {
     constructor() {
         this._enabled = true
