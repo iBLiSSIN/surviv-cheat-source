@@ -74,9 +74,9 @@ var Plugin = class {
            {
                 value: 0.3,
                 int: 0.1,
-                name: "Prediction Level",
+                name: "velocity",
                 UI: {
-                    name: "Prediction",
+                    name: "Prediction Level",
                 },
                 min: 0,
                 max: 1,
