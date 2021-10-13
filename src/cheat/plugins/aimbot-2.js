@@ -71,6 +71,16 @@ var Plugin = class {
                     name: "LegitMode™",
                 },
             },
+           {
+                value: 0.3,
+                int: 0.1,
+                name: "Prediction Level",
+                UI: {
+                    name: "Prediction",
+                },
+                min: 0,
+                max: 1,
+             },
             {
                 value: 0,
                 int: 1,
@@ -379,8 +389,8 @@ var Plugin = class {
             diffX + enemyDirX + enemyDirX * t
         );
         var pos = {
-            x: playerPos.x + Math.cos(bulletAngle) * distance,
-            y: playerPos.y + Math.sin(bulletAngle) * distance,
+            x: (playerPos.x + Math.cos(bulletAngle) * distance) * this.option("velocity"),
+            y: (playerPos.y + Math.sin(bulletAngle) * distance) * this.option("velocity"),
         };
         return dataAccessor.Camera().pointToScreen(pos);
     }
