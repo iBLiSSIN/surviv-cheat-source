@@ -99,18 +99,18 @@ var Plugin = class {
             if(point.type == 2 && point.layer !== dataAccessor.GetPlayerLayer(activePlayer)) {
                 return;
             }
-            pixi.lineStyle(this.option("width"), 0xff0000, 0.5);
+            pixi.lineStyle(this.option("width"), 0x68B0E8, 2);
             if(point.layer !== dataAccessor.GetPlayerLayer(activePlayer)) {
-                pixi.lineStyle(this.option("width"), 0xffffff, 0.5);
+                pixi.lineStyle(this.option("width"), 0x68B0E8, 2);
             }
             if(point.type == 2) {
-                pixi.lineStyle(this.option("width"), 0xffff00, 0.5);
+                pixi.lineStyle(this.option("width"), 0x68B0E8, 2);
             }
             pixi.moveTo(0, 0);
             pixi.lineTo(point.x, point.y);
         });
         if(data.aimPred) {
-            pixi.lineStyle(2, 0xffffff, 0.5);
+            pixi.lineStyle(2, 0x68B0E8, 2);
             pixi.moveTo(0, 0);
             pixi.lineTo(
                 (data.aimPred.x - dataAccessor.GetPlayerPosition(activePlayer).x) * 16,
@@ -245,7 +245,7 @@ var Plugin = class {
                 : angleTo < 0
                 ? angleTo + Math.PI * 2
                 : angleTo;
-        draw.beginFill(color || 0x0000ff, opac || 0.3);
+        draw.beginFill(color || 0xff0000, opac || 0.1);
         draw.moveTo(center.x, center.y);
         draw.arc(center.x, center.y, radius, angleFrom, angleTo);
         draw.lineTo(center.x, center.y);
