@@ -4,6 +4,7 @@ try{
         barn_02: 14934793,
         stone_02: 1654658,
         tree_03: 16777215,
+        tree_03sv: 16777215,
         stone_04: 0xeb175a,
         stone_05: 0xeb175a,
         bunker_storm_01: 14934793,
@@ -11,6 +12,7 @@ try{
     sizes = {
         stone_02: 4,
         tree_03: 2,
+        tree_03sv: 2,
         stone_04: 2,
         stone_05: 2,
     }
