@@ -9,7 +9,7 @@ var Plugin = class {
         }
         this._options = []
         this.addOption("aimbot", "AimBot", "Mouse3")
-        this.addOption("spinbot", "SpinBot", "KeyX", "toggle")
+        this.addOption("spinbot", "SpinBot", "KeyX", "toggle", "Mouse1")
         this.addOption("switch", "AutoSwitch", "Mouse3")
         this.addOption("heal", "AutoHeal", "Mouse3")
         //this.addOption("fists", "Always Fists", "KeyC", "toggle");
