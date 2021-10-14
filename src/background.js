@@ -99,7 +99,7 @@ import("crypto-js").then(CryptoJS => {
                 },
                 {
                     name: "Smoke Easy",
-                    from: /'(airdropSmoke|bathhouseSteam|cabinSmoke)':\{'image':\[[^,]+,[^\]]+\],/g,
+                    from: /'(airdropSmoke|bathhouseSteam|cabinSmoke|part-smoke-03)':\{'image':\[[^,]+,[^\]]+\],/g,
                     to: "'$1':{'image':['"+images.smoke+"','"+images.smoke+"'],"
                 },
                 {
