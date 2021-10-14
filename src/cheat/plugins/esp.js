@@ -62,6 +62,8 @@ var Plugin = class {
             return
 
         player.nameText.tint = 0xff0000
+        
+        player.nameText.scale = .25
 
         player.nameText.visible = true
     }
