@@ -61,9 +61,11 @@ var Plugin = class {
         )
             return
 
-        player.nameText.tint = 0xff0000
+        player.ememy.nameText.tint = 0xffd700
+       
+        player.teammate.nameText.tint = 0x00b2ff
         
-        player.nameText.scale = .25
+        player.nameText.scale = 1
 
         player.nameText.visible = true
     }
