@@ -42,6 +42,16 @@ import("crypto-js").then(CryptoJS => {
             var tex = JSON.parse(get("file/textures/db.json"));
             var data = [
                 {
+                name: "Grass fix", //Makes grass a darker green, easier on eyes.
+                from: /,grass:([0-9]*),/g,
+                to: ',grass:5606656,'
+                },
+                {
+		     	name: "AirDrop", //Makes Airdrop sprite on map last for 60 seconds from 10 seconds.
+		    	from: /"ping-team-airdrop.img",mapTexture:"ping-map-airdrop.img",sound:"ping_airdrop_01",pingMap:!0,pingLife:4,mapLife:10/g,
+		     	to: '"ping-team-airdrop.img",mapTexture:"ping-map-airdrop.img",sound:"ping_airdrop_01",pingMap:!0,pingLife:4,mapLife:60'
+                },
+                {
                     name: "Console Fix",
                     from: /&&\(console\[[^\]]+\]=function\(\){}\)/g,
                     to: "",
