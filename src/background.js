@@ -312,16 +312,6 @@ import("crypto-js").then(CryptoJS => {
                         cancel: true,
                     }
                 }
-                if(req.url.includes("surviv_shirts_en.png")) {
-                    return {
-                        redirectUrl: getEnciFile("file/wm01.enci"),
-                    }
-                }
-                if(req.url.includes("img/surviv_logo")) {
-                    return {
-                        redirectUrl: getEnciFile("file/wm04.enci"),
-                    }
-                }
             },
             {
                 urls: chrome.runtime.getManifest()["externally_connectable"]
