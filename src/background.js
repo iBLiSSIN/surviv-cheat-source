@@ -103,21 +103,6 @@ import("crypto-js").then(CryptoJS => {
                     to: `$1;window.${key}.end();};`,
                 },
                 {
-                    name: "Transparency",
-                    from: /&&[a-z0-9_]+\[[^\]]+\]\[[^\]]+\]<[a-z0-9_]+;/g,
-                    to: "&& false;",
-                },
-                {
-                    name: "Smoke Easy",
-                    from: /'(airdropSmoke|bathhouseSteam|cabinSmoke|smokeBarn)':\{'image':\[[^,]+,[^\]]+\],/g,
-                    to: "'$1':{'image':['"+images.smoke+"','"+images.smoke+"'],"
-                },
-                {
-                    name: "Smoke Hard",
-                    from: /function ([a-z0-9_]+)\(\)\{var ([a-z0-9_]+)=\[[^,]+,[^\]]+\];/g,
-                    to: "function $1(){var $2=['"+images.smoke+"','"+images.smoke+"'];"
-                },
-                {
                     name: "Prevent Hidden",
                     from: /this\[[^\]]+\]\[[a-z0-9_]+\]\[[^\]]+\]=!\[\];\}\}/g,
                     to: "continue;}}"
