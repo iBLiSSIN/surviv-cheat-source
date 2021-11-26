@@ -27,6 +27,9 @@ var Plugin = class {
                 UI: {
                     name: "Tracer Width",
                 },
+                min: 0,
+                max: 180,
+            },
             }
         ]
         this.values = {
