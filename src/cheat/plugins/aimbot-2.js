@@ -253,6 +253,7 @@ var Plugin = class {
                         dataAccessor.GetPlayerPosition(player).y
                     );
                 if(this.option("attack")) {
+                    if(d <= 4) return
                     if(d <= 8) {
                         data.autoAttack = true;
                         input.moveAngle =
