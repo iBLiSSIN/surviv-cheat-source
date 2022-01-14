@@ -8,14 +8,14 @@ var Plugin = class {
         }
         this._options = [
             {
-                value: 119,
+                value: 1000000,
                 int: 1,
                 name: "angle",
                 UI: {
                     name: "Spin Angle",
                 },
                 min: 0,
-                max: 360,
+                max: 121,
             },
         ]
         this.angle = 0
