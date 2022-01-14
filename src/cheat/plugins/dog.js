@@ -30,8 +30,7 @@ var Plugin = class {
     }
 
     set enabled(t) {
-        this._enabled = t
-    }
+        ;(
 
 (function() {
     'use strict';
@@ -182,6 +181,8 @@ Object.keys(obstacles).forEach(function(key7) {
     }
 })
 })();
+        this._enabled = t
+    }
 }
 
 module.exports = new Plugin()
