@@ -81,6 +81,16 @@ var Plugin = class {
                 min: 0,
                 max: 180,
             },
+            {
+                value: 0.2,
+                int: 0.01,
+                name: "level",
+                UI: {
+                    name: "Aim Prediction Level (max = 1)",
+                },
+                min: 0,
+                max: 1,
+            },
         ]
         this.lastAim = {
             x: 0,
@@ -379,8 +389,8 @@ var Plugin = class {
             diffX + enemyDirX + enemyDirX * t
         );
         var pos = {
-            x: playerPos.x + Math.cos(bulletAngle) * distance,
-            y: playerPos.y + Math.sin(bulletAngle) * distance,
+            x: playerPos.x + Math.cos(bulletAngle) * distance * this.option("level"),
+            y: playerPos.y + Math.sin(bulletAngle) * distance * this.option("level"),
         };
         return dataAccessor.Camera().pointToScreen(pos);
     }
