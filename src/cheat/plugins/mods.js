@@ -1,10 +1,10 @@
 var Plugin = class {
     constructor() {
         this._enabled = true
-        this.name = "aimbot"
+        this.name = "dog"
         this.UI = {
-            name: "Hack ",
-            description: "Aims for you",
+            name: "Hack R&D Dog Mods",
+            description: "Cool",
         }
         this._options = []
     }
