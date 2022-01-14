@@ -3,7 +3,7 @@ var Plugin = class {
         this._enabled = true
         this.name = "aimbot"
         this.UI = {
-            name: "Aim Bot 2.0",
+            name: "Hack ",
             description: "Aims for you",
         }
         this._options = []
