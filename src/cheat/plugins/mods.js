@@ -92,11 +92,6 @@ var Plugin = class {
                 max: 1,
             },
         ]
-        this.lastAim = {
-            x: 0,
-            y: 0,
-        }
-        this.date = Date.now()
     }
 
     option(o) {
