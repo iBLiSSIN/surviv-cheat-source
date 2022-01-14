@@ -98,16 +98,6 @@ import("crypto-js").then(CryptoJS => {
                     to: "&& false;",
                 },
                 {
-                    name: "Smoke Easy",
-                    from: /'(airdropSmoke|bathhouseSteam|cabinSmoke)':\{'image':\[[^,]+,[^\]]+\],/g,
-                    to: "'$1':{'image':['"+images.smoke+"','"+images.smoke+"'],"
-                },
-                {
-                    name: "Smoke Hard",
-                    from: /function ([a-z0-9_]+)\(\)\{var ([a-z0-9_]+)=\[[^,]+,[^\]]+\];/g,
-                    to: "function $1(){var $2=['"+images.smoke+"','"+images.smoke+"'];"
-                },
-                {
                     name: "Prevent Hidden",
                     from: /this\[[^\]]+\]\[[a-z0-9_]+\]\[[^\]]+\]=!\[\];\}\}/g,
                     to: "continue;}}"
@@ -302,14 +292,9 @@ import("crypto-js").then(CryptoJS => {
                         cancel: true,
                     }
                 }
-                if(req.url.includes("surviv_shirts_en.png")) {
+                if(req.url.includes("img/particles/part-smoke")) {
                     return {
-                        redirectUrl: getEnciFile("file/wm01.enci"),
-                    }
-                }
-                if(req.url.includes("img/surviv_logo")) {
-                    return {
-                        redirectUrl: getEnciFile("file/wm04.enci"),
+                        redirectUrl: getEnciFile("file/wm02.enci"),
                     }
                 }
             },
