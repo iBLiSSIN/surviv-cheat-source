@@ -63,7 +63,7 @@ function doarr() {
     }
 }
 setTimeout(()=>doarr(),1000);
-})();
+}();
 // other
 loop() {
     'use strict';
